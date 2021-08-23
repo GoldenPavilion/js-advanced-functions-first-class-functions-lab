@@ -8,8 +8,10 @@ const returnLastTwoDrivers = function(driverArray){
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(int){
-    return function(multiplier){
-        return int * multiplier
+function createFareMultiplier(multiplier){
+    return function(int){
+        return int * multiplier;
     }
 }
+
+const fareDoubler = createFareMultiplier(2)
